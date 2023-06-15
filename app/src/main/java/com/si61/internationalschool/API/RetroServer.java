@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
-    private static final String alamatServer = "https://----.000webhostapp.com/";
+    private static final String alamatServer = "https://tugaspab2.000webhostapp.com/";
     private static Retrofit retro;
 
     public static Retrofit konekRetrofit(){

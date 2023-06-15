@@ -18,7 +18,7 @@ public class AdapterSekolah extends RecyclerView.Adapter<AdapterSekolah.VHSekola
     private Context ctx;
     private List<ModelSekolah> listsekolah;
 
-    public AdapterSekolah(Context ctx, List<ModelSekolah> listwisata){
+    public AdapterSekolah(Context ctx, List<ModelSekolah> listsekolah){
         this.ctx = ctx;
         this.listsekolah = listsekolah;
     }
