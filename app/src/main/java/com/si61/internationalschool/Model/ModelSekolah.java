@@ -1,7 +1,7 @@
 package com.si61.internationalschool.Model;
 
 public class ModelSekolah {
-    String id, nama, alamat, noTelepon, Fasilitas;
+    String id, nama, alamat, no_telepon, fasilitas;
 
     public String getId() {
         return id;
@@ -16,10 +16,10 @@ public class ModelSekolah {
     }
 
     public String getNoTelepon() {
-        return noTelepon;
+        return no_telepon;
     }
 
     public String getFasilitas() {
-        return Fasilitas;
+        return fasilitas;
     }
 }
