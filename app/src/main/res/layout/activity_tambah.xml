@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="6dp"
+
     tools:context=".Activity.TambahActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tambah Data Sekolah"
-        android:textSize="17sp"
+        android:layout_marginTop="10pt"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
@@ -46,7 +48,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_simpan"
-        android:layout_marginTop="16dp"
-        android:text="Simpan"/>
+        android:backgroundTint="#1db7ae"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:text="SIMPAN"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/basket" />
 
 </LinearLayout>

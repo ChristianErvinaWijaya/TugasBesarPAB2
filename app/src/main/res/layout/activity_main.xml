@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="6dp"
+    android:background="#EBFCFB"
     tools:context=".Activity.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,7 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#c0f6f3"
         android:id="@+id/fab_tambah"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
