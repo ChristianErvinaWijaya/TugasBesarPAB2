@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.si61.internationalschool.API.APIRequestData;
 import com.si61.internationalschool.API.RetroServer;
+import com.si61.internationalschool.Activity.DetailActivity;
 import com.si61.internationalschool.Activity.MainActivity;
 import com.si61.internationalschool.Activity.TambahActivity;
 import com.si61.internationalschool.Activity.UbahActivity;
@@ -103,7 +104,20 @@ public class AdapterSekolah extends RecyclerView.Adapter<AdapterSekolah.VHSekola
                     return false;
                 }
             });
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent kirim = new Intent(ctx, DetailActivity.class);
+                    kirim.putExtra("xId", tvId.getText().toString());
+                    kirim.putExtra("xNama", tvNama.getText().toString());
+                    kirim.putExtra("xAlamat", tvAlamat.getText().toString());
+                    kirim.putExtra("xNoTelp", tvNoTelp.getText().toString());
+                    kirim.putExtra("xFasilitas", tvFasilitas.getText().toString());
+                    ctx.startActivity(kirim);
+                }
+            });
         }
+
         void prosesHapus(String id){
             APIRequestData API = RetroServer.konekRetrofit().create(APIRequestData.class);
             Call<ModelResponse> proses = API.ardDelete(id);
