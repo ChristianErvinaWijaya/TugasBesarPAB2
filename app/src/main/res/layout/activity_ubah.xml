@@ -57,6 +57,7 @@
         android:layout_width="340dp"
         android:layout_height="158dp"
         android:layout_marginTop="200dp"
+        android:layout_gravity="center"
         app:srcCompat="@drawable/library" />
 
 </LinearLayout>
